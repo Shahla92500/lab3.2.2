@@ -66,11 +66,7 @@ main {
     box-sizing: border-box;
 }
 
-.card {
-    width: 385px;
-    height: 522px;
-}
-  
+
 .author-div{
     display: flex;
     align-items: center;
@@ -110,6 +106,14 @@ article {
 }
 @media (max-width: 600px) {
     .card {
-     width: 385; height: 92vw; }
+         flex-direction: column;    /* one column */
+         }
 }
-
+.card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 385px;
+    height: 522px;
+}
+  
