@@ -1,0 +1,115 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500, 800;  
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    color: rgb(7, 3, 3);
+    background:  hsl(47, 88%, 63%);
+}
+main {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;   
+}
+.displaying > img {
+  width: 100%;
+  display: block;                    
+  border-radius: 12px 12px 0 0;      
+}
+.card {
+    position: relative;
+    background: hsl(0, 0%, 100%); 
+    width: 385px; 
+    height: 522px;
+    border-radius: 12px;          /* rounded image corners */ 
+    border: 1px solid black;
+    box-shadow: 8px 8px black;  
+}
+.displaying {
+     align-items:center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-radius: 12px;
+    margin-bottom: 23px;
+    width: 100%;
+}
+
+.catg-adv{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 12px;
+    margin-left: 11.5px;
+}
+.catg{
+   background: hsl(47, 88%, 63%); 
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 850;
+    border-radius: 5px;
+}
+.publishedDate{
+    font-size: 11.8px;
+    width: 100%;
+    font-weight: 600;
+    color: black;
+}
+* {
+    padding: 0;
+    margin-bottom: -1px;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 385px;
+    height: 522px;
+}
+  
+.author-div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 11.5px;
+    margin-left: 11.5px;
+    & > img {
+        width: 32px;        
+    }
+    & > .name {
+        font-size: 14px;
+        font-weight: 800;
+    }
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 23px;
+    margin-left: 11.5px;
+    & > h2 {
+        margin-bottom: 3px;
+    }
+    & > h2:hover {
+        color:hsl(47, 88%, 63%);;
+    }
+    & > h2 {
+        font-size: 20px;
+    }
+    & > P {
+        color: grey;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;  
+    }
+}
+@media (max-width: 600px) {
+    .card {
+     width: 385; height: 92vw; }
+}
+
